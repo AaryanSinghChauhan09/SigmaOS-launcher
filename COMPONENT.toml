@@ -1,0 +1,8 @@
+[component]
+name = "SigmaOS-launcher"
+version = "0.1.0"
+maturity = "alpha"
+tier = 5
+owner = "SigmaOS Team"
+purpose = "Application launcher with fuzzy search and app catalog integration"
+dependencies = ["SigmaOS-desktop"]
