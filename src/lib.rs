@@ -1,10 +1,15 @@
 pub mod app_entry;
 pub mod config;
 pub mod error;
+pub mod launcher;
 pub mod service;
 pub use app_entry::{AppCatalog, AppEntry};
 pub use config::Config;
 pub use error::{ComponentError, Result};
+pub use launcher::app_launcher::{
+    init_default_apps, AppEntry as LauncherAppEntry, AppLauncher, Command, CommandAction,
+    LauncherError, MatchType, SearchResult,
+};
 pub use service::{Service, ServiceStatus};
 pub trait Component {
     fn name(&self) -> &str;
